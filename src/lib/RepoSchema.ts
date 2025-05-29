@@ -2,7 +2,8 @@ import { z } from 'zod';
 
 export const RepoSchema = z.object({
     id: z.number(),
-    name: z.string(),
+   name: z.string().nullable().transform((val) => val ?? ''),
+
     html_url: z.string().url(),
     description: z.string().nullable()
 });
