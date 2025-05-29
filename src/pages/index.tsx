@@ -14,6 +14,12 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async () => {
+
+    if (!username.trim()) {
+      setError('Por favor, informe um nome de usuário.');
+      return;
+    }
+    
     setError(null);
     setUser(null);
     setRepos([]);
@@ -72,7 +78,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center  bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <img
         src="/github.gif"
         alt="GitHub gif"
