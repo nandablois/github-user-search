@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Busca de Repositórios - GitHub</title>
+        <title>Busca de perfis - GitHub</title>
         <meta name="description" content="App para buscar perfis e repositórios do GitHub" />
 
       </Head>
