@@ -1,3 +1,21 @@
+Busca de Perfis do GitHub, onde é possível pesquisar qualquer usuário e visualizar suas informações públicas e repositórios, podendo escolher um repositório e clicar para ser redirecionado diretamente para ele. O projeto consome dados diretamente da GitHub REST API, com as seguintes funcionalidades:
+
+- Buscar perfil público de um usuário do GitHub.
+- Exibir informações principais do perfil: Avatar, nome e bio.
+- Exibir mensagens de erro quando o usuário não for encontrado ou ocorrer algum erro na requisição.
+- Validação de dados com Zod.
+- Estilização moderna com TailwindCSS 
+
+Tecnologias Utilizadas:
+- Next.js 
+- React 
+- TypeScript 
+- Zod 
+- TailwindCSS
+- GitHub REST API
+
+## Confira o projeto online(Vercel): https://lnkd.in/eBnkgyQX
+-----
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
